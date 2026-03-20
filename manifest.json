@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "WanderTographer",
+  "version": "1.1",
+  "description": "Adds current browser URL to your own wander.js file on GitHub or Codeberg",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://codeberg.org/api/v1/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wandertographer@bruff.gay",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  }
+}
+
